@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 35_Config_Server_App

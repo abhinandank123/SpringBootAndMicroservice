@@ -1,0 +1,9 @@
+package in.ashokit.model;
+
+public class Book {
+	
+	private Integer bookId;
+	private String bookName;
+	
+
+}

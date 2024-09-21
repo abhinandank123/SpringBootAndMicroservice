@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: 32_welcome_API WELCOME-API
+    
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

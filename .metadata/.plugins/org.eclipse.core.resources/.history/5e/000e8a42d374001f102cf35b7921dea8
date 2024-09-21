@@ -1,0 +1,14 @@
+package in.ashokit.rest;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MessageRestController {
+	
+	
+	public String welcomeMsg() {
+		
+		return "Welcome to my Home....!!";
+	}
+
+}

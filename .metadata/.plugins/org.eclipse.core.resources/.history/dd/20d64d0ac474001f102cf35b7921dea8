@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 40_Resilience4J_CircuitBreaker
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+  endpoint:
+    health:
+      show-details: always
+      enabled: true

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: 32_welcome_API
+  boot:
+    admin:
+      client:
+        url:
+        - http://localhost:1111/
+server:
+  port: 8081

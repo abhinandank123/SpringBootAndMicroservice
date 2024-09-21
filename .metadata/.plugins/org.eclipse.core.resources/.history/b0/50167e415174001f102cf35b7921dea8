@@ -1,0 +1,19 @@
+package in.ashokit.rest;
+
+import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.model.Book;
+
+@RestController
+public class BookRestController {
+	
+	HashOperations<String, Integer, Book>opsFoHash=null;
+	
+	public BookRestController(RedisTemplate<String, Book> redisTemplate) {
+		this.opsFoHash=redisTemplate.opsForHash();
+		
+	}
+
+}

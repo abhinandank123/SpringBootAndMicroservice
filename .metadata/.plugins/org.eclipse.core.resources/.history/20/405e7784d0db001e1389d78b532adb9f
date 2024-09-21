@@ -1,0 +1,33 @@
+package in.ashokit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokit.entities.UserStudentEntities;
+import in.ashokit.repos.UserStudentRepo;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context=SpringApplication.run(Application.class, args);
+		
+		UserStudentRepo userStudentRepo = context.getBean(UserStudentRepo.class);
+		//System.out.println(userStudentRepo.getClass().getName());
+		
+		UserStudentEntities entity = new UserStudentEntities();
+		entity .setAge(20);
+		entity .setCity("Nanpur");
+		entity .setEmail("sunil@gmail.com");
+		entity .setGender("male");
+		entity .setName("Sunil");
+		entity .setId(103);
+		userStudentRepo.save(entity);
+		System.out.println("Done ....."); 
+		
+		
+		
+	}
+
+}

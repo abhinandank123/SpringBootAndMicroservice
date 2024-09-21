@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 33_Greet_API
+  boot:
+    admin:
+      client:
+        url: https://localhost:1111/
+server:
+  port: 9091

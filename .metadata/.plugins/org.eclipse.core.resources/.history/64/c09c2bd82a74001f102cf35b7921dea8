@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 36_Config_Client_App
+  config:
+    import: optional:configserver:http://localhost:8080
+   application:
+    name: greet
+server:
+  port: 9090
